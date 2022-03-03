@@ -1,0 +1,56 @@
+
+.rowStyle{
+    display:flex;
+    white-space:nowrap;
+    margin-top: 1rem;
+}
+
+.blankStyle {
+    width:100%;
+    border-bottom:1px solid black;
+    padding-left:1rem
+}
+
+.dateField {
+    position:absolute;
+    border-style:none;
+    border-color:gray;
+    border-width:1px;
+    padding-right:1px;
+    padding-left:1px
+}
+
+
+.dateField:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.removeSignBtn:hover  {
+    cursor: pointer;
+}
+
+.containerStyle {
+    width:100%;
+    justify-content:center;
+    display:flex;
+    overflow:scroll;
+}
+
+@media (max-width: 800px) {
+    .containerStyle {
+        justify-content:start;
+    }
+  }
+
+  .mobileRow {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    white-space:nowrap;
+  }
+  .mobileCol{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    white-space:nowrap;
+  }
