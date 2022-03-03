@@ -17,28 +17,28 @@ export const darkTheme = {
   type: 'dark',
 }
 
-export const getShadowColor = (theme, val, clr) => {
+export const getShadowColor = (theme: any, val: any, clr:any) => {
   return theme.type == 'dark' ? darken(val, clr) : lighten(val, clr);
 }
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+    background: ${({ theme }:any) => theme.body};
+    color: ${({ theme }:any) => theme.text};
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.50s linear;
     oveflow-x: hidden;
   }
 
   a {
-      color: ${({ theme }) => theme.text};
+      color: ${({ theme }:any) => theme.text};
       cursor: pointer;
   }
 
   .btn {
-    color: ${({ theme }) => theme.text};
-    background: ${({ theme }) => getShadowColor(theme, 0.70, theme.text)};
-    border-color: ${({ theme }) => theme.text};
+    color: ${({ theme }:any) => theme.text};
+    background: ${({ theme }:any) => getShadowColor(theme, 0.70, theme.text)};
+    border-color: ${({ theme }:any) => theme.text};
     display: inline-block;
     padding: 8px 16px;
     border-radius: 2px;
@@ -57,7 +57,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .linkinactive{
-    color: ${({ theme }) => getShadowColor(theme, 0.25, theme.text)};
+    color: ${({ theme }:any) => getShadowColor(theme, 0.25, theme.text)};
   }
 
   .avatar {
